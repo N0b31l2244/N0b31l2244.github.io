@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มายไบโอ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="lightningCanvas"></canvas>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>n0b31l</h2>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat-box">
+                <h3>สถานะชีวิต</h3>
+                <p id="followers"></p>
+            </div>
+        </div>
+
+        <a href="https://www.instagram.com/n0b31l/" class="btn">instagram</a>
+        <a href="https://github.com/N0b31l2244" class="btn">github</a>
+        <a href="https://www.youtube.com/@NoB31l_1" class="btn">youtube</a>
+        <a href="https://x.com/pupa99800016" class="btn">X(twitter)</a>
+        <div class="footer">Powered by n0b31l</div>
+    </div>
+    
+    <script>
+        // พิมพ์และลบข้อความ
+        const followersElement = document.getElementById("followers");
+        const texts = ["เหงามาก", "คนที่ชอบก็ไม่คุยด้วย", "โทรมาได้โทรมาเลยกดปุ่มข้างล่าง"];
+        let index = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentText = texts[index];
+            if (isDeleting) {
+                charIndex--;
+            } else {
+                charIndex++;
+            }
+            followersElement.textContent = currentText.substring(0, charIndex);
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 1000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                index = (index + 1) % texts.length;
+            }
+            setTimeout(typeEffect, isDeleting ? 100 : 200);
+        }
+        typeEffect();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
