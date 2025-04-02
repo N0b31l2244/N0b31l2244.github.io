@@ -55,6 +55,18 @@
         }
         typeEffect();
     </script>
+    <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById("bg-music");
+        audio.volume = 0.5; // ตั้งค่าเสียงเบา
+        audio.play().catch(error => console.log("Autoplay blocked:", error));
+    });
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>
