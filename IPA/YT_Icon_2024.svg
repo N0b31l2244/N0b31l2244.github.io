@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="800 100 200 200"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="YT_Icon_2024.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.735"
+     inkscape:cx="100"
+     inkscape:cy="100"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <g
+     style=""
+     transform="matrix(0.992792, 0, 0, 0.992792, 6.476694, 1.432965)"
+     id="g4">
+    <rect
+       x="800"
+       y="100"
+       width="200"
+       height="200"
+       style="fill: rgb(255, 255, 255); stroke: rgb(229, 229, 229);"
+       rx="46.095"
+       ry="46.095"
+       id="rect1" />
+    <g
+       transform="matrix(0.460848, 0, 0, 0.460848, 826.509155, 148.540207)"
+       style=""
+       id="g1">
+      <path
+         fill="#FF0000"
+         d="M312.2563171,34.8599815c-3.6678162-13.7215042-14.4743347-24.5280342-28.1958618-28.1958084 C259.1894226,0,159.4602356,0,159.4602356,0S59.7310257,0,34.8600121,6.6641741 C21.1384773,10.3319483,10.3319483,21.1384773,6.6641588,34.8599815C0,59.7309647,0,111.6222,0,111.6222 s0,51.8912277,6.6641588,76.7622147c3.6677895,13.7214966,14.4743185,24.5280304,28.1958542,28.1958008 C59.7310257,223.2444,159.4602356,223.2444,159.4602356,223.2444s99.729187,0,124.6002197-6.6641846 c13.7215271-3.6677704,24.5280457-14.4743042,28.1958618-28.1958008 c6.6641541-24.8709869,6.6641541-76.7622147,6.6641541-76.7622147S318.9204712,59.7309647,312.2563171,34.8599815z"
+         id="path1"
+         style="fill:#ff0033;fill-opacity:1" />
+      <polygon
+         fill="#FFFFFF"
+         points="127.5681839,159.4602356 210.4225464,111.6235657 127.5681839,63.7840919 	"
+         id="polygon1" />
+    </g>
+    <g
+       transform="matrix(1, 0, 0, 1, 426.22464, 70.326241)"
+       id="g3">
+      <g
+         id="g2" />
+    </g>
+  </g>
+</svg>
