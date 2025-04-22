@@ -48,6 +48,25 @@ body {
     box-shadow: 0 4px 10px rgba(255, 102, 178, 0.7);
     font-size: 16px;
 }
+.btn-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    margin: 10px auto;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
+    font-size: 16px;
+}
+
 .btn img {
     width: 24px;
     height: 24px;
