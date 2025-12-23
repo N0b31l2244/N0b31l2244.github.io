@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dev Bio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1b1f3b, #0a0c1b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #eaeaff;
+      overflow: hidden;
+    }
+
+    /* animated background dots */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 30px 30px;
+      animation: moveBG 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveBG {
+      from { transform: translateY(0); }
+      to { transform: translateY(-60px); }
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 340px;
+      padding: 35px 30px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+      backdrop-filter: blur(16px);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.15),
+                  0 25px 60px rgba(0,0,0,0.6);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 40px 90px rgba(0,0,0,0.75);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      background: linear-gradient(#000,#000) padding-box,
+                  linear-gradient(135deg, #7f7cff, #00ffe0) border-box;
+      object-fit: cover;
+      margin-bottom: 18px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      margin: 8px 0 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      color: #9aa0ff;
+      margin-bottom: 18px;
+    }
+
+    .bio {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      opacity: 0.95;
+    }
+
+    .links a {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: #eaeaff;
+      padding: 13px;
+      border-radius: 14px;
+      margin: 12px 0;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .links a::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
+
+    .links a:hover::before {
+      transform: translateX(100%);
+    }
+
+    .links a:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.7rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="IMG_4046.jpg" alt="avatar" class="avatar" />
+
+    <h1>n0b31l</h1>
+    <div class="tagline">student | editor | camera | python | C++ | เป็นทุกอย่างให้เธอแล้ว</div>
+
+    <div class="bio">
+      ยินดีต้อนรับสู่ Bio <br />
+      ชื่อเล่นภูผา เข้ามาทักทายได้ไม่กัด :D<br />
+      ทางไป ทางอื่นๆเกี่ยวกับผม
+    </div>
+
+    <div class="links">
+      <a href="https://www.instagram.com/n0b31l/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.tiktok.com/@p5a_sad"><i class="fa-brands fa-tiktok"></i> Tikok</a>
+      <a href="https://www.facebook.com/pr.mi.nthth.kr.ceriy.phumi"><i class="fa-brands fa-facebook"></i> facebook</a>
+      <a href="https://github.com/N0b31l2244"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://discord.com/users/1035332350055297075"><i class="fab fa-discord"></i> Discord</a>
+    </div>
+
+    <footer>
+      &lt;/&gt; thank you. • 2025
+    </footer>
+  </div>
+</body>
+</html>
